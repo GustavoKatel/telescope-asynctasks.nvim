@@ -5,7 +5,7 @@ Integration for [asynctasks](https://github.com/skywind3000/asynctasks.vim) with
 
 # Demo
 
-![Demo](./demo.gif)
+![Demo](./demo_tasks.gif)
 
 # Installation
 
