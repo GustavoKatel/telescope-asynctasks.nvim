@@ -2,6 +2,7 @@ local actions = require('telescope.actions')
 local finders = require('telescope.finders')
 local pickers = require('telescope.pickers')
 local sorters = require('telescope.sorters')
+local state = require('telescope.actions.state')
 
 
 return require('telescope').register_extension {
@@ -31,7 +32,7 @@ return require('telescope').register_extension {
                 attach_mappings = function(prompt_bufnr, map)
 
                     local start_task = function()
-                        local selection = actions.get_selected_entry(prompt_bufnr)
+                        local selection = state.get_selected_entry(prompt_bufnr)
                         actions.close(prompt_bufnr)
 
                         local task_name = tasks[selection.index][1]
