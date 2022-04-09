@@ -29,3 +29,7 @@ Plug 'GustavoKatel/telescope-asynctasks.nvim'
 -- Fuzzy find over current tasks
 require('telescope').extensions.asynctasks.all()
 ```
+
+```
+:Telescope asynctasks all
+```
